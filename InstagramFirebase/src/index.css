@@ -4,10 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  /* outline: 1px solid red; */
 }
 body{
-  background-color: #f5f5f5;
+  background-color: #454444;
+  /* background: url('assets/react.svg'); */
+  /* background-repeat: ; */
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
