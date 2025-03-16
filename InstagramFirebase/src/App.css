@@ -1,0 +1,32 @@
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i{
+        font-size: 1rem;
+        /* color: #c5c4c435; */
+    }
+}
+.photoItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photoDetail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    span{
+        font-size: 0.8rem;
+        /* color: #c5c4c4; */
+        font-weight: 300;
+    }
+}
