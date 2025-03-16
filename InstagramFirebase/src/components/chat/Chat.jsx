@@ -8,6 +8,11 @@ const Chat = () => {
     setText((prev) => prev + e.emoji);
     setOpen(false);
   };
+
+  const endRef = React.useRef(null);
+  React.useEffect(() => {
+    endRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <div className="flex-2 border-l-2 border-r-2 border-[#c5c4c435] h-full flex flex-col">
       <div className="top p-2 flex items-center justify-between border-b border-b-[#c5c4c435]">
@@ -34,6 +39,7 @@ const Chat = () => {
             <p className="bg-gray-200/80 text-sm text-gray-800 p-2 rounded-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa quos sequi magnam quae veritatis animi reiciendis nihil voluptas laboriosam?</p>
             <span className="text-xs text-gray-600">1 min ago</span>
           </div>
+          <div ref={endRef}></div>
         </div>
         <div className="message other max-w-[80%] flex gap-4 self-start">
           <img src="/manish_grg.jpg" className="w-10 h-10 object-cover rounded-full" alt="" />
