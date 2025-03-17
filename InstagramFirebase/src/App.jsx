@@ -5,17 +5,25 @@ import viteLogo from '/vite.svg'
 import List from './components/list/List'
 import Chat from './components/chat/Chat'
 import Detail from './components/detail/Detail'
+import Login from './components/login/Login'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const user = false;
   return (
     <>
-      <div className="w-[90vw] h-[90vh] bg-[#fff] rounded-sm backdrop-blur-sm border-2 border-red-300 flex">
+    {
+      user?(
+      <div className="w-[90vw] h-[90vh] bg-[#fff] rounded-sm backdrop-blur-sm flex p-1">
         <List />
         <Chat />
         <Detail />
       </div>
+
+      ):(
+        <Login />
+      )
+    }
     </>
   )
 }

@@ -3,14 +3,14 @@ import '../../App.css'
 const Detail = () => {
   return (
     <div className='flex-1 p-2'>
-      <div className="user px-3 py-2 flex flex-col  justify-center items-center gap-3 border-b border-b-[#c5c4c435]">
+      <div className="user flex flex-col  justify-center items-center gap-3 border-b border-b-[#c5c4c435]">
         <img src="/manish_grg.jpg" className='rounded-full w-20 object-cover' alt="" />
         <div className="texts flex flex-col gap- justify-center items-center">
           <h2 className=''>Manish Gurung</h2>
           <p className='text-sm'>Lorem, ipsum.</p>
         </div>
       </div>
-      <div className="info py-3 flex flex-col gap-3">
+      <div className="info py-1 flex flex-col gap-2.5">
         <div className="option">
           <div className="title">
             <span>Chat Settings</span>
@@ -50,6 +50,7 @@ const Detail = () => {
             <span>Shared files</span>
           </div>
           <button className='bg-red-400 hover:bg-red-500 text-white border-none w-full rounded-sm px-2 py-1 mt-4 cursor-pointer'>Block user</button>
+          <button className='bg-gray-400 hover:bg-gray-500 text-white border-none w-full rounded-sm px-2 py-1 mt-4 cursor-pointer'>Logout</button>
         </div>
       </div>
     </div>

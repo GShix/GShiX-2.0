@@ -11,11 +11,11 @@ const Chat = () => {
 
   const endRef = React.useRef(null);
   React.useEffect(() => {
-    endRef.current.scrollIntoView({ behavior: "smooth" });
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
   return (
     <div className="flex-2 border-l-2 border-r-2 border-[#c5c4c435] h-full flex flex-col">
-      <div className="top p-2 flex items-center justify-between border-b border-b-[#c5c4c435]">
+      <div className="top px-2 py-1 flex items-center justify-between border-b border-b-[#c5c4c435]">
         <div className="user flex items-center gap-8">
           <img
             src="/manish_grg.jpg"
@@ -75,7 +75,7 @@ const Chat = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#5183fe] text-gray-50 px-2 py-1 border-none rounded-md cursor-pointer"
+          className="bg-[#6f93f0] hover:bg-[#5183fe] text-gray-50 px-2 py-1 border-none rounded-md cursor-pointer"
         >
           Send
         </button>
