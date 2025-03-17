@@ -10,7 +10,7 @@ import Notification from './components/notification/Notification'
 
 function App() {
   const [count, setCount] = useState(0)
-  const user = true;
+  const user = false;
   return (
     <>
     {
