@@ -17,7 +17,7 @@
         label{
             width: 100%;
             display: flex;
-            justify-content: space-between; 
+            gap: 20px;
             align-items: center;
             cursor: pointer;
             text-decoration: underline;

@@ -1,17 +1,15 @@
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getFirestore } from "firebase/storage";
-
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: "chat-gshix.firebaseapp.com",
-  projectId: "chat-gshix",
-  storageBucket: "chat-gshix.firebasestorage.app",
-  messagingSenderId: "746503016299",
-  appId: "1:746503016299:web:d8daf040c5d7f5c66bc62e"
+  apiKey:"AIzaSyBDbtEskv0ycg-jBobYt9Hd9bRCb-s0wAE",
+  authDomain:"react-chat-25ac2.firebaseapp.com",
+  projectId:"react-chat-25ac2",
+  storageBucket:"react-chat-25ac2.firebasestorage.app",
+  messagingSenderId:"265104677163",
+  appId:"1:265104677163:web:dec7f9137de35ee4f3cd6e"
 };
 
 // Initialize Firebase
